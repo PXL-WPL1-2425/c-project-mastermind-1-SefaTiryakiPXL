@@ -22,7 +22,7 @@ namespace Mastermind
     /// </summary>
     public partial class MainWindow : Window
     {
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -71,12 +71,138 @@ namespace Mastermind
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
         }
 
-        private void CheckBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CheckBox1_SelectionChanged1(object sender, SelectionChangedEventArgs e)
         {
+            // pakt wat de gelescteerde kleur is
+            string kleur1 = CheckBox1.SelectedItem.ToString();
+            if (kleur1 == null) return;
+            switch (kleur1)
+            {
+                case "rood":
+                    Kleur1.Background = Brushes.Red;
+                break;
 
+                case "geel":
+                    Kleur1.Background = Brushes.Yellow;
+                break;
+
+                case "groen":
+                    Kleur1.Background = Brushes.Green;
+                break;
+
+                case "oranje":
+                    Kleur1.Background = Brushes.Orange;
+                break;
+
+                case "wit":
+                    Kleur1.Background = Brushes.White;
+                break;
+
+                case "blauw":
+                    Kleur1.Background = Brushes.Blue;
+                break;
+            }
+        }
+        private void CheckBox1_SelectionChanged2(object sender, SelectionChangedEventArgs e)
+        {
+            string kleur2 = CheckBox2.SelectedItem.ToString();
+
+            if (kleur2 == null) return;
+            switch (kleur2)
+            {
+                case "rood":
+                    Kleur2.Background = Brushes.Red;
+                break;
+
+                case "geel":
+                    Kleur2.Background = Brushes.Yellow;
+                break;
+
+                case "groen":
+                    Kleur2.Background = Brushes.Green;
+                break;
+
+                case "oranje":
+                    Kleur2.Background = Brushes.Orange;
+                break;
+
+                case "wit":
+                    Kleur2.Background = Brushes.White;
+                break;
+
+                case "blauw":
+                    Kleur2.Background = Brushes.Blue;
+                break;
+            }
+
+
+        }
+        private void CheckBox1_SelectionChanged3(object sender, SelectionChangedEventArgs e)
+        {
+            string kleur3 = CheckBox3.SelectedItem.ToString();
+
+            if (kleur3 == null) return;
+            switch (kleur3)
+            {
+                case "rood":
+                    Kleur3.Background = Brushes.Red;
+                break;
+
+                case "geel":
+                    Kleur3.Background = Brushes.Yellow;
+                break;
+
+                case "groen":
+                    Kleur3.Background = Brushes.Green;
+                break;
+
+                case "oranje":
+                    Kleur3.Background = Brushes.Orange;
+                break;
+
+                case "wit":
+                    Kleur3.Background = Brushes.White;
+                break;
+
+                case "blauw":
+                    Kleur3.Background = Brushes.Blue;
+                break;
+            }
+        }
+
+        private void CheckBox1_SelectionChanged4(object sender, SelectionChangedEventArgs e)
+        {
+            string kleur4 = CheckBox4.SelectedItem.ToString();
+            if (kleur4 == null) return;
+            switch (kleur4)
+            {
+                case "rood":
+                    Kleur4.Background = Brushes.Red;
+                break;
+
+                case "geel":
+                    Kleur4.Background = Brushes.Yellow;
+                break;
+
+                case "groen":
+                    Kleur4.Background = Brushes.Green;
+                break;
+
+                case "oranje":
+                    Kleur4.Background = Brushes.Orange;
+                break;
+
+                case "wit":
+                    Kleur4.Background = Brushes.White;
+                break;
+
+                case "blauw":
+                    Kleur4.Background = Brushes.Blue;
+                break;
+            }
         }
     }
 }
