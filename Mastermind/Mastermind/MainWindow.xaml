@@ -5,13 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Mastermind"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Mastermind" Height="450" Width="800">
     <Grid>
 
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="200"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="200,0,0,0"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="400,0,0,0"/>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="600,0,0,0"/>
-        <Button Content="Check code" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <ComboBox Name="CheckBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" SelectionChanged="CheckBox1_SelectionChanged"/>
+        <ComboBox Name="CheckBox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="200,0,0,0"/>
+        <ComboBox Name="CheckBox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="400,0,0,0"/>
+        <ComboBox Name="CheckBox4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="600,0,0,0"/>
+
+        <Button Content="Check code" Width="200" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" />
+        <Label Name="Kleur1" Content="" HorizontalAlignment="Left" Margin="0,22,0,0" VerticalAlignment="Top" Height="130" Width="200"/>
+        <Label Name="Kleur2" Content="" HorizontalAlignment="Left" Margin="200,22,0,0" VerticalAlignment="Top" Height="130" Width="200"/>
+        <Label Name="Kleur3" Content="" HorizontalAlignment="Left" Margin="400,22,0,0" VerticalAlignment="Top" Height="130" Width="200"/>
+        <Label Name="Kleur4" Content="" HorizontalAlignment="Left" Margin="600,22,0,0" VerticalAlignment="Top" Height="130" Width="200"/>
+
+
     </Grid>
 </Window>
