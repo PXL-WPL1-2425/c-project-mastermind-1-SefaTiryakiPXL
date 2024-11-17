@@ -164,9 +164,8 @@ namespace Mastermind
                 case "blauw":
                     Kleur1.Background = Brushes.Blue;
                 break;
-
-
             }
+            TextBlock1.Text = $"Gekozen kleur: {kleur1}";
         }
         private void SelectionChanged2(object sender, SelectionChangedEventArgs e)
         {
@@ -199,8 +198,7 @@ namespace Mastermind
                     Kleur2.Background = Brushes.Blue;
                 break;
             }
-
-
+            TextBlock2.Text = $"Gekozen kleur: {kleur2}";
         }
         private void SelectionChanged3(object sender, SelectionChangedEventArgs e)
         {
@@ -233,6 +231,7 @@ namespace Mastermind
                     Kleur3.Background = Brushes.Blue;
                 break;
             }
+            TextBlock3.Text = $"Gekozen kleur: {kleur3}";
         }
 
         private void SelectionChanged4(object sender, SelectionChangedEventArgs e)
@@ -265,6 +264,7 @@ namespace Mastermind
                     Kleur4.Background = Brushes.Blue;
                 break;
             }
+            TextBlock4.Text = $"Gekozen kleur: {kleur4}";
         }
 
     }
